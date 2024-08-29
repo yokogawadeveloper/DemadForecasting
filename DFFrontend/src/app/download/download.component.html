@@ -1,0 +1,68 @@
+<div class="container-fluid" style="font-size: small;">
+    <div class="mx-auto">
+        <div class="col-sm-12 p-0 mat-elevation-z8 mb-3">
+            <div class="card-header text-white bg-dark font-weight-bold">
+                <span> DOWNLOAD FILES </span>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 py-5 mx-3">
+                <div class="row col-sm-12 col-md-12 col-lg-12">
+                    <div class="col-sm-4 col-md-4 col-lg-4 my-2">
+                        <mat-card class="mat-elevation-z8" (click)="downloadFile('View_1')" style="cursor: pointer;">
+                            <mat-card-content>
+                                <i class="material-icons p-2" style="font-size:50px">flight_takeoff</i><span>View</span>
+                            </mat-card-content>
+                        </mat-card>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4 my-2">
+                        <mat-card class="mat-elevation-z8" (click)="downloadFile('Discrepancy')" style="cursor: pointer;">
+                            <mat-card-content><i class="material-icons p-2" style="font-size:50px">error</i><span>Discrepancy</span>
+                            </mat-card-content>
+                        </mat-card>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4 my-2">
+                        <mat-card (click)="downloadFile('Tokuchu')" class="mat-elevation-z8" style="cursor: pointer;">
+                            <mat-card-content><i class="material-icons p-2" style="font-size:50px">verified_user</i><span>Tokuchu</span>
+                            </mat-card-content>
+                        </mat-card>
+                    </div>
+                </div>
+
+                <!----------------- row --------------------->
+
+                <div class="row col-sm-12 col-md-12 col-lg-12 py-4">
+                    <div class="col-sm-4 col-md-4 col-lg-4 my-2">
+                        <mat-card class="mat-elevation-z8" (click)="downloadFile('Consolidated Output')"
+                            style="cursor: pointer;">
+                            <mat-card-content><i class="material-icons p-2" style="font-size:50px">hourglass_full</i><label><span>Consolidated
+                                        Output</span></label>
+                            </mat-card-content>
+                        </mat-card>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4 my-2">
+                        <mat-card class="mat-elevation-z8" (click)="downloadFile('alert')" style="cursor: pointer;">
+                            <mat-card-content><i class="material-icons p-2" style="font-size:50px">report</i><label><span>Alert</span></label>
+                            </mat-card-content>
+                        </mat-card>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4 my-2">
+                        <mat-card class="mat-elevation-z8" (click)="downloadFile('kanban')" style="cursor: pointer;">
+                            <mat-card-content><i class="material-icons p-2" style="font-size:50px">report</i><label><span>Kanban</span></label>
+                            </mat-card-content>
+                        </mat-card>
+                    </div>
+                </div>
+                <div class="row col-sm-12 col-md-12 col-lg-12 py-4">
+                    <div class="col-sm-4 col-md-4 col-lg-4 my-2">
+                        <mat-card class="mat-elevation-z8" (click)="downloadforecastoutput()"
+                            style="cursor: pointer;">
+                            <mat-card-content><i class="material-icons p-2" style="font-size:50px">hourglass_full</i><label><span>Forecast
+                                        Output</span></label>
+                            </mat-card-content>
+                        </mat-card>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

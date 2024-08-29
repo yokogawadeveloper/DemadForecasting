@@ -1,0 +1,16 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.app-header{justify-content:space-between;position:fixed;top:0;left:0px;right:0;z-index:3;box-shadow:0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);}
+
+.side-bar{
+  width: 230px;
+  font-size: small;
+  top: 60px !important;
+}
+
+@media(min-width : 320px){
+  .mar {
+    margin-top:80px;
+  }
+}

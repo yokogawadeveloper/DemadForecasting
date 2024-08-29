@@ -1,0 +1,6 @@
+venv/
+jupyter/
+gunicorn.pid
+requirements.txt
+datas/migrations
+users/migrations

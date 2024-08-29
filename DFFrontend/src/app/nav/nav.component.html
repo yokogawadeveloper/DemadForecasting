@@ -1,0 +1,28 @@
+<mat-toolbar color="light" class="fixed-top app-header">
+    <mat-toolbar-row>
+        <span><img src="../../assets/backgroud/logoYokogawa.png" width="170px"></span>
+        <span class="example-spacer"></span>
+        <span class="p-2">
+            <button (click)="logout()" mat-raised-button>Logout</button>
+        </span>
+        <span class="nav-tool-items" style="cursor: pointer;">
+            <mat-icon (click)="toggleSidenav()" class="hamburger pull-right">menu</mat-icon>
+        </span>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container fullscreen>
+    <!-- Sidenav -->
+    <mat-sidenav class="mat-elevation-z8 side-bar" #sidenav [mode]="isBiggerScreen() ? 'over' : 'side'" [(opened)]="opened" 
+        [fixedTopGap]>
+        <ng-material-multilevel-menu [configuration]='config' [items]='appitems'>
+        </ng-material-multilevel-menu>
+    </mat-sidenav>
+
+    <!-- Main content -->
+    <mat-sidenav-content>
+        <section class="title-group container-fluid mar">
+            <router-outlet></router-outlet>
+        </section>
+    </mat-sidenav-content>
+</mat-sidenav-container>

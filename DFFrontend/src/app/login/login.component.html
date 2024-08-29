@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="wrapper fadeInDown" style="padding-top: 100px;">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+            <!-- Icon -->
+            <div class="fadeIn first">
+                <img style="height: 100px;width: 200px;" src="../../assets/backgroud/login_icon.jpg" id="icon"
+                    alt="User Icon" />
+            </div>
+            
+            <!-- Login Form -->
+            <form class="py-3">
+                <div class="alert alert-danger" role="alert" *ngIf="loginMessage">
+                    {{ loginMessage }}
+                </div>
+                <input type="username" class="fadeIn second" name="username" [(ngModel)]="usermodel.username"
+                   placeholder="Username" >
+                <input type="password" class="fadeIn third" name="password" [(ngModel)]="usermodel.password"
+                   placeholder="Password"> 
+                <button type="submit" mat-stroked-button (click)="loginuser()" color="light" class="mt-2 w-50 fadeIn fourth">
+                    <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>Login
+                </button>
+            </form>
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+                <a class="underlineHover" href="#">Forgot Password?</a>
+            </div>
+        </div>
+    </div>
+</div>

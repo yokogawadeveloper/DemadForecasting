@@ -1,0 +1,110 @@
+<div class="container-fluid" style="font-size: small;">
+    <div class="mx-auto">
+        <div class="card col-sm-12 p-0 my-3 mat-elevation-z8">
+            <div class="card-header text-white bg-dark font-weight-bold">
+                <span> UPLOAD FILES </span>
+            </div>
+            <div class="col-sm-12">
+                <form [formGroup]="uploadForm" (ngSubmit)="onSubmit()" enctype="multipart/form-data" #myForm="ngForm">
+                    <div class="row justify-content-center">
+                        <mat-card class="mat-elevation-z8 col-sm-4 col-md-8 col-lg-4 m-3" style="cursor: pointer;">
+                            <div class="input-group">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" name="manufacture"
+                                        (change)="OnFileSelect($event,'manufacture')" accept=".csv">
+                                    <label class="custom-file-label">LIST OF PENDING ORDERS</label>
+                                </div>
+                            </div>
+                            <span class="badge badge-light font-weight-light text-center pt-2">
+                                Last uploaded on {{ dates?.manufacture | json}}
+                            </span>
+                        </mat-card>
+                        <mat-card class="mat-elevation-z8 col-sm-4 col-md-8 col-lg-4 m-3" style="cursor: pointer;">
+                            <div class="input-group">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" name="inventory"
+                                        (change)="OnFileSelect($event, 'inventory')" accept=".csv" required>
+                                    <label class="custom-file-label">INVENTORY / STOCK</label>
+                                </div>
+                            </div>
+                            <span class="badge badge-light font-weight-light text-center pt-2">
+                                Last uploaded on {{ dates.inventory | json}}
+                            </span>
+                        </mat-card>
+                        <mat-card class="mat-elevation-z8 col-sm-4 col-md-8 col-lg-4 m-3" style="cursor: pointer;">
+                            <div class="input-group">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" name="cpaFob"
+                                        (change)="OnFileSelect($event, 'cpaFob')" accept=".csv" required>
+                                    <label class="custom-file-label">CPAFOB</label>
+                                </div>
+                            </div>
+                            <span class="badge badge-light font-weight-light text-center pt-2">
+                                Last uploaded on {{ dates.cpaFob | json}}
+                            </span>
+                        </mat-card>
+                        <mat-card class="mat-elevation-z8 col-sm-4  col-md-8 col-lg-4 m-3" style="cursor: pointer;">
+                            <div class="input-group">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" name="grList"
+                                        (change)="OnFileSelect($event, 'grList')" accept=".csv" required>
+                                    <label class="custom-file-label">GR LIST</label>
+                                </div>
+                            </div>
+                            <span class="badge badge-light font-weight-light text-center pt-2">
+                                Last uploaded on {{ dates.grList | json}}
+                            </span>
+                        </mat-card>
+                        <div class="m-3 row">
+
+                        <mat-card class="mat-elevation-z8 m-2" style="cursor: pointer;">
+                            <div class="input-group">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" name="kdParts"
+                                        (change)="OnFileSelect($event, 'kdParts')" accept=".csv" required>
+                                    <label class="custom-file-label">KD PARTS FOB</label>
+                                </div>
+                            </div>
+                            <span class="badge badge-light font-weight-light text-center pt-2">
+                                Last uploaded on {{ dates.kdParts | json}}
+                            </span>
+                        </mat-card>
+                            <mat-form-field class="mat-elevation-z8 m-2" appearance="outline">
+                                <mat-label>Threshold value</mat-label>
+                                <input matInput placeholder="Threshold value" type="number" formControlName="threshold"
+                                    value="{{ threshold }}" id="threshold">
+                                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                            </mat-form-field>
+                            <mat-form-field class="mat-elevation-z8 m-2" appearance="outline">
+                                <mat-label>Requirements week</mat-label>
+                                <input matInput placeholder="Requirements week value" type="number" formControlName="requiredWeek"
+                                    value="{{ requiredWeek }}" id="requiredWeek">
+                                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                            </mat-form-field>
+                            <mat-form-field class="mat-elevation-z8 m-2" appearance="outline">
+                                <mat-label>Pipeline week</mat-label>
+                                <input matInput placeholder="Pipeline week value" type="number" formControlName="pipelineWeek"
+                                    value="{{ pipelineWeek }}" id="pipelineWeek">
+                                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                            </mat-form-field>
+                            <!-- <mat-form-field class="mat-elevation-z8 m-2" appearance="outline">
+                                <mat-label>Indent Ref. No</mat-label>
+                                <input matInput placeholder="Indent Ref. No" type="text" formControlName="indentrefno"
+                                    value="{{ indentrefno }}" id="indentrefno">
+                                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                            </mat-form-field> -->
+                        </div>
+
+                    </div>
+                    <div class="row p-1 justify-content-center">
+                        <button type="submit" mat-raised-button class="col-sm-3 btn btn-secondary mb-3">Upload</button>
+                    </div>
+                </form>
+            </div>
+        </div><br><br>
+    </div>
+    <ngx-spinner style="opacity: 9;" bdColor="rgba(90, 107, 109, 0.18)" size="medium" color="#efff00"
+        type="square-jelly-box" [fullScreen]="true">
+        <p style="color: Black;font-family: 'Lato', sans-serif;"> Sit Tight . . .</p>
+    </ngx-spinner>
+</div><br><br>

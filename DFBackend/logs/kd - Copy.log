@@ -1,0 +1,718 @@
+
+WARNING  2021-01-08 15:50:28,691  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  14956  Not Found: / 
+
+WARNING  2021-01-08 15:50:28,802  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  14956  Not Found: /favicon.ico 
+
+WARNING  2021-01-08 16:04:26,509  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  13600  Not Found: /favicon.ico 
+
+WARNING  2021-01-12 10:52:02,448  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  19760  Unauthorized: /user/login/ 
+
+WARNING  2021-01-12 10:52:13,114  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  19760  Unauthorized: /user/login/ 
+
+WARNING  2021-01-12 10:52:26,731  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  19760  Unauthorized: /user/login/ 
+
+WARNING  2021-01-12 10:52:46,911  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  19760  Unauthorized: /user/login/ 
+
+WARNING  2021-01-12 10:52:55,864  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  19760  Unauthorized: /user/login/ 
+
+WARNING  2021-01-12 10:53:13,989  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  19760  Unauthorized: /user/login/ 
+
+WARNING  2021-01-12 10:53:25,440  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  19760  Unauthorized: /user/login/ 
+
+WARNING  2021-01-12 10:53:31,058  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  19760  Unauthorized: /user/login/ 
+
+WARNING  2021-01-12 10:53:39,371  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  19760  Unauthorized: /user/login/ 
+
+WARNING  2021-01-12 10:53:43,089  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  19760  Unauthorized: /user/login/ 
+
+WARNING  2021-01-12 10:53:55,402  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  19760  Unauthorized: /user/login/ 
+
+WARNING  2021-01-12 10:53:58,980  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  19760  Unauthorized: /user/login/ 
+
+WARNING  2021-01-12 10:54:05,668  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  19760  Unauthorized: /user/login/ 
+
+WARNING  2021-01-12 10:54:12,871  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  19760  Unauthorized: /user/login/ 
+
+WARNING  2021-01-12 10:54:18,293  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  19760  Unauthorized: /user/login/ 
+
+WARNING  2021-01-12 10:54:21,656  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  19760  Unauthorized: /user/login/ 
+
+WARNING  2021-01-12 10:55:17,098  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  19908  Not Found: /favicon.ico 
+
+WARNING  2021-01-12 13:03:44,433  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  15760  Not Found: / 
+
+WARNING  2021-01-12 13:43:48,857  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  18524  Unauthorized: /alert/ 
+
+WARNING  2021-01-12 13:43:48,857  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  16888  Unauthorized: /cpastokechartdata/ 
+
+WARNING  2021-01-12 13:43:48,857  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  19392  Unauthorized: /kanban/ 
+
+WARNING  2021-01-12 14:21:11,993  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  17812  Unauthorized: /user/login/ 
+
+WARNING  2021-01-12 14:23:01,209  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  17812  Not Found: / 
+
+ERROR  2021-01-12 15:04:50,750  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  15728  Internal Server Error: /datesofinputfiles/ 
+Traceback (most recent call last):
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File ".\datas\views\chartViews.py", line 93, in get
+    context['manufacture'] = datetime.fromtimestamp(os.path.getmtime(file+'/manufacture.csv')).strftime("%m/%d/%Y, %H:%M:%S")
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\genericpath.py", line 55, in getmtime
+    return os.stat(filename).st_mtime
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'E:\\DemandForecasting\\DF_Django\\transmitter-sales-analysis-system-django\\static\\inputFiles/manufacture.csv'
+ERROR  2021-01-12 15:05:00,476  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  15728  Internal Server Error: /datesofinputfiles/ 
+Traceback (most recent call last):
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File ".\datas\views\chartViews.py", line 93, in get
+    context['manufacture'] = datetime.fromtimestamp(os.path.getmtime(file+'/manufacture.csv')).strftime("%m/%d/%Y, %H:%M:%S")
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\genericpath.py", line 55, in getmtime
+    return os.stat(filename).st_mtime
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'E:\\DemandForecasting\\DF_Django\\transmitter-sales-analysis-system-django\\static\\inputFiles/manufacture.csv'
+WARNING  2021-01-12 16:03:16,358  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  19808  Not Found: / 
+
+WARNING  2021-01-12 16:03:16,424  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  19808  Not Found: /favicon.ico 
+
+WARNING  2021-01-12 16:03:32,960  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  19808  Not Found: /static/admin/css/base.css 
+
+WARNING  2021-01-12 16:03:38,012  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  17688  Not Found: /static/admin/css/responsive.css 
+
+WARNING  2021-01-12 16:03:38,035  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  13396  Not Found: /static/admin/css/login.css 
+
+WARNING  2021-01-12 16:03:38,819  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  13396  Not Found: /static/admin/css/responsive.css 
+
+WARNING  2021-01-12 16:03:38,821  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  17760  Not Found: /static/admin/css/login.css 
+
+WARNING  2021-01-12 16:06:34,569  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  13396  Not Found: /static/admin/css/responsive.css 
+
+WARNING  2021-01-12 16:06:34,569  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  17688  Not Found: /static/admin/css/base.css 
+
+WARNING  2021-01-12 16:06:35,998  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  17760  Not Found: /static/admin/css/base.css 
+
+WARNING  2021-01-12 16:06:35,998  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  17688  Not Found: /static/admin/css/login.css 
+
+WARNING  2021-01-12 16:06:35,999  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  13396  Not Found: /static/admin/css/responsive.css 
+
+WARNING  2021-01-12 16:10:40,852  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  19936  Not Found: /static/admin/css/base.css 
+
+WARNING  2021-01-12 16:10:45,807  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  19480  Not Found: /static/admin/css/responsive.css 
+
+WARNING  2021-01-12 16:10:45,813  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  19472  Not Found: /static/admin/css/login.css 
+
+WARNING  2021-01-12 16:10:49,575  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  19472  Not Found: /static/admin/css/base.css 
+
+WARNING  2021-01-12 16:10:49,575  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  19480  Not Found: /static/admin/css/login.css 
+
+WARNING  2021-01-12 16:10:49,576  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  19936  Not Found: /static/admin/css/responsive.css 
+
+WARNING  2021-01-12 16:21:29,837  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  13788  Not Found: / 
+
+WARNING  2021-01-12 16:27:36,187  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  18060  Unauthorized: /user/login/ 
+
+WARNING  2021-01-14 12:30:33,507  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  17028  Unauthorized: /staticfilesdownload/ 
+
+WARNING  2021-01-14 12:30:34,132  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  17028  Not Found: /favicon.ico 
+
+WARNING  2021-01-14 12:30:45,532  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  17028  Unauthorized: /staticfilesdownload/ 
+
+WARNING  2021-01-14 12:32:00,079  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  17028  Unauthorized: /staticfilesdownload/ 
+
+WARNING  2021-01-15 10:12:07,403  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  15160  Unauthorized: /staticfilesdownload/ 
+
+WARNING  2021-01-15 10:12:25,372  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  15160  Unauthorized: /staticfilesdownload/ 
+
+WARNING  2021-01-17 18:50:43,180  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  13636  Unauthorized: /data/ 
+
+WARNING  2021-01-17 18:50:43,195  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  20172  Unauthorized: /datesofinputfiles/ 
+
+WARNING  2021-01-17 20:11:09,225  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  16816  Unauthorized: /modeltoparts/ 
+
+WARNING  2021-01-26 20:21:14,432  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  11516  Unauthorized: /modeltoparts/ 
+
+WARNING  2021-01-27 14:50:01,155  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  13028  Unauthorized: /alert/ 
+
+WARNING  2021-01-27 14:50:01,170  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  11524  Unauthorized: /cpastokechartdata/ 
+
+WARNING  2021-01-27 14:50:01,170  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  11524  Unauthorized: /kanban/ 
+
+WARNING  2021-01-31 21:36:31,619  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  2916  Unauthorized: /modeltoparts/ 
+
+WARNING  2021-02-03 19:21:02,486  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  3964  Unauthorized: /modeltoparts/ 
+
+WARNING  2021-02-08 10:18:39,405  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  5808  Unauthorized: /modeltoparts/ 
+
+WARNING  2021-02-08 11:44:14,686  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  2696  Unauthorized: /modeltoparts/ 
+
+WARNING  2021-02-14 19:16:20,593  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  13476  Unauthorized: /modeltoparts/ 
+
+WARNING  2021-02-19 08:09:28,599  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  10776  Not Found: /favicon.ico 
+
+WARNING  2021-02-19 08:20:00,992  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  13084  Unauthorized: /user/login/ 
+
+WARNING  2021-02-19 08:20:06,334  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  13084  Unauthorized: /user/login/ 
+
+WARNING  2021-02-19 08:20:39,250  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  12200  Not Found: /inventory/ 
+
+WARNING  2021-02-19 08:21:00,315  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  13084  Not Found: /inventory/ 
+
+WARNING  2021-02-19 08:29:23,364  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  11076  Not Found: /favicon.ico 
+
+ERROR  2021-02-19 08:32:18,148  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  11284  Internal Server Error: /inventory/ 
+Traceback (most recent call last):
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File ".\datas\views\chartViews.py", line 23, in get
+    serializers = InventoryGraphSerializer(queryset, many=True).data
+NameError: name 'InventoryGraphSerializer' is not defined
+ERROR  2021-02-19 08:32:31,375  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  12140  Internal Server Error: /inventory/ 
+Traceback (most recent call last):
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File ".\datas\views\chartViews.py", line 23, in get
+    serializers = InventoryGraphSerializer(queryset, many=True).data
+NameError: name 'InventoryGraphSerializer' is not defined
+ERROR  2021-02-19 08:33:19,987  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  11284  Internal Server Error: /inventory/ 
+Traceback (most recent call last):
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File ".\datas\views\chartViews.py", line 23, in get
+    serializers = InventoryGraphSerializer(queryset, many=True).data
+NameError: name 'InventoryGraphSerializer' is not defined
+ERROR  2021-02-19 08:37:29,563  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  3616  Internal Server Error: /inventory/ 
+Traceback (most recent call last):
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File ".\datas\views\chartViews.py", line 23, in get
+    serializers = InventoryGraphSerializer(queryset, many=True).data
+NameError: name 'InventoryGraphSerializer' is not defined
+WARNING  2021-02-19 08:38:29,194  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  14588  Bad Request: /inventory/ 
+
+WARNING  2021-02-19 08:38:29,271  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  15748  Bad Request: /favicon.ico 
+
+ERROR  2021-02-19 08:39:09,847  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  6624  Internal Server Error: /inventory/ 
+Traceback (most recent call last):
+  File "E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\datas\views\chartViews.py", line 23, in get
+    serializers = InventoryGraphSerializer(queryset, many=True).data
+NameError: name 'InventoryGraphSerializer' is not defined
+WARNING  2021-02-19 08:39:10,176  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  6624  Not Found: /favicon.ico 
+
+WARNING  2021-02-19 08:40:00,187  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  11204  Not Found: /static/rest_framework/css/bootstrap-tweaks.css 
+
+WARNING  2021-02-19 08:40:00,188  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  14952  Not Found: /static/rest_framework/css/bootstrap.min.css 
+
+WARNING  2021-02-19 08:40:00,192  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  13044  Not Found: /static/rest_framework/css/prettify.css 
+
+WARNING  2021-02-19 08:40:00,194  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  13660  Not Found: /static/rest_framework/css/default.css 
+
+WARNING  2021-02-19 08:40:00,197  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  13176  Not Found: /static/rest_framework/js/jquery-3.4.1.min.js 
+
+WARNING  2021-02-19 08:40:00,200  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  14664  Not Found: /static/rest_framework/js/ajax-form.js 
+
+WARNING  2021-02-19 08:40:00,204  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  11204  Not Found: /static/rest_framework/js/csrf.js 
+
+WARNING  2021-02-19 08:40:00,210  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  14952  Not Found: /static/rest_framework/js/bootstrap.min.js 
+
+WARNING  2021-02-19 08:40:00,212  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  13044  Not Found: /static/rest_framework/js/prettify-min.js 
+
+WARNING  2021-02-19 08:40:00,216  E:\DemandForecasting\DF_Django\transmitter-sales-analysis-system-django\env\lib\site-packages\django\utils\log.py  log  228  13660  Not Found: /static/rest_framework/js/default.js 
+
+WARNING  2021-02-19 09:56:38,059  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  1904  Unauthorized: /alert/ 
+
+WARNING  2021-02-19 09:56:38,059  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  13128  Unauthorized: /cpastokechartdata/ 
+
+WARNING  2021-02-19 09:56:38,059  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  1044  Unauthorized: /kanban/ 
+
+WARNING  2021-02-19 09:56:38,059  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  1904  Unauthorized: /inventory/ 
+
+WARNING  2021-02-19 11:37:45,428  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  8588  Unauthorized: /alert/ 
+
+rtdata/ 
+
+WARNING  2021-02-19 11:37:45,490  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  14700  Unauthorized: /kanban/ 
+
+WARNING  2021-02-19 13:10:45,955  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  15620  Unauthorized: /kanban/ 
+
+WARNING  2021-02-19 13:10:45,955  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  14476  Unauthorized: /cpastokechartdata/ 
+
+WARNING  2021-02-19 13:10:45,970  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  672  Unauthorized: /alert/ 
+
+WARNING  2021-02-19 13:10:46,002  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  16076  Unauthorized: /inventory/ 
+
+WARNING  2021-02-22 13:37:47,796  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  3200  Unauthorized: /modeltoparts/ 
+
+WARNING  2021-02-24 20:24:18,729  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  11704  Unauthorized: /datesofstaticfiles/ 
+
+WARNING  2021-02-24 20:24:18,760  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  11024  Unauthorized: /industrywise/ 
+
+WARNING  2021-03-07 20:01:34,418  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  22384  Unauthorized: /modeltoparts/ 
+
+WARNING  2021-03-18 16:26:01,410  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  25256  Not Found: / 
+
+WARNING  2021-03-18 16:26:01,480  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  25256  Not Found: /favicon.ico 
+
+WARNING  2021-03-22 23:16:48,724  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  12456  Unauthorized: /modeltoparts/ 
+
+WARNING  2021-03-29 13:26:31,646  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  31252  Unauthorized: /modeltoparts/ 
+
+WARNING  2021-03-31 09:29:54,564  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  31192  Unauthorized: /modeltoparts/ 
+
+WARNING  2021-04-06 11:26:54,225  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  35756  Unauthorized: /datesofstaticfiles/ 
+
+WARNING  2021-04-06 11:26:54,236  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  36116  Unauthorized: /industrywise/ 
+
+WARNING  2021-04-06 13:35:22,798  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  35668  Unauthorized: /data/ 
+
+utfiles/ 
+
+WARNING  2021-04-06 14:49:08,997  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  36656  Unauthorized: /modeltoparts/ 
+
+WARNING  2021-04-12 10:19:36,904  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  36096  Unauthorized: /user/login/ 
+
+WARNING  2021-04-12 10:20:00,638  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  36096  Not Found: / 
+
+WARNING  2021-04-12 10:20:16,061  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  36096  Not Found: /favicon.ico 
+
+WARNING  2021-04-12 10:20:16,061  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  36096  Not Found: /favicon.ico 
+
+ERROR  2021-04-12 10:21:21,214  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  32980  Internal Server Error: /data/ 
+Traceback (most recent call last):
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File ".\datas\views\views.py", line 348, in post
+    serializer.save()
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\serializers.py", line 207, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\serializers.py", line 979, in update
+    info = model_meta.get_field_info(instance)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\utils\model_meta.py", line 35, in get_field_info
+    opts = model._meta.concrete_model._meta
+AttributeError: 'QuerySet' object has no attribute '_meta'
+ERROR  2021-04-12 10:21:34,745  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  32980  Internal Server Error: /data/ 
+Traceback (most recent call last):
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File ".\datas\views\views.py", line 348, in post
+    serializer.save()
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\serializers.py", line 207, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\serializers.py", line 979, in update
+    info = model_meta.get_field_info(instance)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\utils\model_meta.py", line 35, in get_field_info
+    opts = model._meta.concrete_model._meta
+AttributeError: 'QuerySet' object has no attribute '_meta'
+WARNING  2021-04-27 11:16:53,818  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  2800  Unauthorized: /modeltoparts/ 
+
+WARNING  2021-05-03 21:19:25,871  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  24496  Unauthorized: /modeltoparts/ 
+
+WARNING  2021-05-25 11:17:02,946  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  54152  Unauthorized: /datesofinputfiles/ 
+
+WARNING  2021-05-25 12:22:11,649  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  53232  Unauthorized: /modeltoparts/ 
+
+WARNING  2021-06-04 13:43:13,230  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  21516  Unauthorized: /user/login/ 
+
+WARNING  2021-06-04 13:44:12,107  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  21516  Not Found: /favicon.ico 
+
+WARNING  2021-06-04 13:44:16,904  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  21516  Unauthorized: /user/login/ 
+
+WARNING  2021-06-04 13:44:26,435  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  21516  Unauthorized: /user/login/ 
+
+WARNING  2021-06-04 13:44:35,406  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  21516  Unauthorized: /user/login/ 
+
+WARNING  2021-06-04 14:46:13,226  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  56216  Unauthorized: /modeltoparts/ 
+
+WARNING  2021-06-07 11:20:09,414  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  56036  Unauthorized: /modeltoparts/ 
+
+WARNING  2021-06-07 12:25:44,649  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  57196  Unauthorized: /modeltoparts/ 
+
+WARNING  2021-06-10 12:33:54,799  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  61620  Not Found: / 
+
+WARNING  2021-06-10 12:34:06,550  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  61620  Not Found: / 
+
+WARNING  2021-06-10 12:34:06,878  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  61620  Not Found: /favicon.ico 
+
+WARNING  2021-06-22 21:25:54,871  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  65344  Unauthorized: /modeltoparts/ 
+
+ERROR  2021-06-30 22:05:24,245  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  67340  Internal Server Error: /data/ 
+Traceback (most recent call last):
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File ".\datas\views\views.py", line 354, in post
+    cpa_list = cpa_list[['P/O  No.', 'YHQ Sales Order Item No','Estimated\nFOB','MS Code','Qty']]
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\pandas\core\frame.py", line 2806, in __getitem__
+    indexer = self.loc._get_listlike_indexer(key, axis=1, raise_missing=True)[1]
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\pandas\core\indexing.py", line 1551, in _get_listlike_indexer
+    keyarr, indexer, o._get_axis_number(axis), raise_missing=raise_missing
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\pandas\core\indexing.py", line 1644, in _validate_read_indexer
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['YHQ Sales Order Item No'] not in index"
+ERROR  2021-06-30 22:06:26,781  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  67340  Internal Server Error: /data/ 
+Traceback (most recent call last):
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File ".\datas\views\views.py", line 348, in post
+    serializer.save()
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\serializers.py", line 207, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\serializers.py", line 979, in update
+    info = model_meta.get_field_info(instance)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\utils\model_meta.py", line 35, in get_field_info
+    opts = model._meta.concrete_model._meta
+AttributeError: 'QuerySet' object has no attribute '_meta'
+ERROR  2021-07-01 08:12:17,873  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  62140  Internal Server Error: /data/ 
+Traceback (most recent call last):
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File ".\datas\views\views.py", line 354, in post
+    cpa_list = cpa_list[['P/O  No.', 'YHQ Sales Order Item No','Estimated\nFOB','MS Code','Qty']]
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\pandas\core\frame.py", line 2806, in __getitem__
+    indexer = self.loc._get_listlike_indexer(key, axis=1, raise_missing=True)[1]
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\pandas\core\indexing.py", line 1551, in _get_listlike_indexer
+    keyarr, indexer, o._get_axis_number(axis), raise_missing=raise_missing
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\pandas\core\indexing.py", line 1644, in _validate_read_indexer
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['YHQ Sales Order Item No'] not in index"
+ERROR  2021-07-01 08:14:56,374  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  62140  Internal Server Error: /data/ 
+Traceback (most recent call last):
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File ".\datas\views\views.py", line 348, in post
+    serializer.save()
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\serializers.py", line 207, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\serializers.py", line 979, in update
+    info = model_meta.get_field_info(instance)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\utils\model_meta.py", line 35, in get_field_info
+    opts = model._meta.concrete_model._meta
+AttributeError: 'QuerySet' object has no attribute '_meta'
+WARNING  2021-07-01 09:58:29,598  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  67012  Unauthorized: /modeltoparts/ 
+
+ERROR  2021-07-01 15:17:11,230  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  69420  Internal Server Error: /data/ 
+Traceback (most recent call last):
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File ".\datas\views\views.py", line 348, in post
+    serializer.save()
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\serializers.py", line 207, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\serializers.py", line 979, in update
+    info = model_meta.get_field_info(instance)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\utils\model_meta.py", line 35, in get_field_info
+    opts = model._meta.concrete_model._meta
+AttributeError: 'QuerySet' object has no attribute '_meta'
+ERROR  2021-07-02 10:32:42,426  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  64676  Internal Server Error: /data/ 
+Traceback (most recent call last):
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File ".\datas\views\views.py", line 354, in post
+    cpa_list = cpa_list[['P/O  No.', 'YHQ Sales Order Item No','Estimated\nFOB','MS Code','Qty']]
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\pandas\core\frame.py", line 2806, in __getitem__
+    indexer = self.loc._get_listlike_indexer(key, axis=1, raise_missing=True)[1]
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\pandas\core\indexing.py", line 1551, in _get_listlike_indexer
+    keyarr, indexer, o._get_axis_number(axis), raise_missing=raise_missing
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\pandas\core\indexing.py", line 1644, in _validate_read_indexer
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['YHQ Sales Order Item No'] not in index"
+ERROR  2021-07-02 10:49:07,649  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  72536  Internal Server Error: /data/ 
+Traceback (most recent call last):
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File ".\datas\views\views.py", line 348, in post
+    serializer.save()
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\serializers.py", line 207, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\serializers.py", line 979, in update
+    info = model_meta.get_field_info(instance)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\utils\model_meta.py", line 35, in get_field_info
+    opts = model._meta.concrete_model._meta
+AttributeError: 'QuerySet' object has no attribute '_meta'
+ERROR  2021-07-02 10:54:45,029  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  71180  Internal Server Error: /data/ 
+Traceback (most recent call last):
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File ".\datas\views\views.py", line 355, in post
+    cpa_list = cpa_list[['P/O  No.', 'YHQ Sales Order Item No','Estimated\nFOB','MS Code','Qty']]
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\pandas\core\frame.py", line 2806, in __getitem__
+    indexer = self.loc._get_listlike_indexer(key, axis=1, raise_missing=True)[1]
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\pandas\core\indexing.py", line 1551, in _get_listlike_indexer
+    keyarr, indexer, o._get_axis_number(axis), raise_missing=raise_missing
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\pandas\core\indexing.py", line 1644, in _validate_read_indexer
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['YHQ Sales Order Item No'] not in index"
+WARNING  2021-07-02 11:49:04,859  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  67768  Not Found: / 
+
+WARNING  2021-07-02 11:49:04,960  c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\django\utils\log.py  log  228  67768  Not Found: /favicon.ico 
+

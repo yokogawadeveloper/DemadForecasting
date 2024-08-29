@@ -1,0 +1,238 @@
+Sl. No.,PART NO.,Description,Lead Time,Category,Std. Price
+1,F9920BE,Brain - Amp. With Cert,57,A,1855.12
+2,F9920BG,Brain - Amp. w/o Cert,50,A,1855.12
+3,F9921AH,Field bus - Amp. With Cert,64,A,5936.93
+5,F9921AE,Profi bus - Amp. w/o Cert,57,A,5936.93
+6,F9920BX,Low Power - Amplifier,64,A,2968.47
+7,F9920BN,Hart - Amp. With Cert,50,A,1855.12
+8,F9920BQ,Hart - Amp. w/o Cert,50,A,1855.12
+10,F9920TS,Brain/Hart - LPT Assy. with Cert,57,B,419.83
+11,F9920TP,Brain/Hart - LPT Assy. w/o Cert,50,B,548.75
+13,F9920VS,Brain/Hart - LPT Assy. with Cert & /A,57,B,470.85
+14,F9920VP,Brain/Hart - LPT Assy. w/o Cert & /A,50,B,631.46
+15,F9921TG,Field/Profi Bus - LPT Assy. with Cert.,57,B,626.64
+16,F9921TF,Field/Profi Bus - LPT Assy. w/o cert.,57,A,1053.38
+17,F9921VG,Field/Profi Bus - LPT Assy. with Cert. & /A,57,A,781.76
+18,F9921VF,Field/Profi Bus - LPT Assy. w/o Cert & /A,57,A,1170.56
+19,F9920TX,Low Power - LPT Assy,57,A,1133.34
+20,F9920VY,Low Power - LPT Assy & /A,57,A,0
+21,F9920LV,LCD Assy. with SW,57,A,1113.35
+22,F9920LU,LCD Assy. w/o SW,64,A,1113.35
+24,F9913JA,Case 1 - Meter Cover Assy. ,57,B,588.05
+25,F9913JR,Case 1 - Meter Cover Assy. with /X2,45,A,788.75
+26,F9913JS,Case 1 - Meter Cover Assy. with /X2,57,A,929.98
+28,F9913KA,Case 1 - Meter Cover Assy. + /HE,57,B,0
+30,F9913KS,Case 1 - Meter Cover Assy. with /X2 + /HE,57,A,0
+31,F9913JX,Case 1 - Meter Cover Assy. with /PR,57,A,892.05
+32,F9913KX,Case 1 - Meter Cover Assy. with /HE + /PR,57,A,976.84
+33,F9913KT,Case 1 - Meter Cover Assy. with /HE + /P1,57,A,976.84
+34,F9913KU,Case 1 - Meter Cover Assy. with /HE + /P2,57,A,976.84
+35,F9913KV,Case 1 - Meter Cover Assy. with /HE + /P7,57,A,976.84
+36,F9913JT,Case 1 - Meter Cover Assy. with /P1,57,A,856.2
+37,F9913JU,Case 1 - Meter Cover Assy. with /P2,57,A,892.05
+38,F9913JV,Case 1 - Meter Cover Assy. with /P7,57,A,892.05
+39,F9913JZ,Case 2 - Meter Cover Assy. ,43,A,1302.24
+40,F9913KZ,Case 2 - Meter Cover Assy. + /HE,50,A,1395.31
+41,F9913KY,Case 2 - Meter Cover Assy. with /HE + /PR,57,A,1535.25
+42,F9913JY,Case 2 - Meter Cover Assy. + /PR,57,A,1451.15
+44,F9913GA,Case 3 - Meter Cover Assy. ,57,B,671.45
+46,F9913HA,Case 3 - Meter Cover Assy. + /HE,50,A,0
+47,F9913GX,Case 3 - Meter Cover Assy. with /PR,57,A,976.84
+48,F9913HX,Case 3 - Meter Cover Assy. with /HE + /PR,57,A,1049.93
+50,F9913GS,Case 3 - Meter Cover Assy. with /X2,57,A,0
+52,F9913HS,Case 3 - Meter Cover Assy. with /X2 + /HE,57,A,0
+54,F9913TJ,Case 1 - Blind Cover,40,B,315.75
+56,F9913VJ,Case 1 - Blind Cover with /X2,57,B,#N/A
+57,F9913VK,Case 1 - Blind Cover with /P1,57,B,511.52
+58,F9913VL,Case 1 - Blind Cover with /P2,57,B,511.52
+59,F9913VM,Case 1 - Blind Cover with /P7,57,B,511.52
+60,F9913VP,Case 1 - Blind Cover with /PR,57,B,557.72
+61,F9913SC,Case 2 - Blind cover,57,A,1185.74
+62,F9913SD,Case 2 - Blind Cover with /PR,57,A,1302.24
+64,F9913CJ,Case 3 - Blind cover,57,B,0
+66,F9913DJ,Case 3 - Blind Cover with /X2,57,B,0
+69,F9913TA,Case 1 - Terminal Cover,64,B,259.9
+71,F9913VA,Case 1 - Terminal Cover with /X2,57,B,464.64
+72,F9913VF,Case 1 - Terminal Cover Assy. with /PR,57,B,511.52
+73,F9913SA,Case 2 - Terminal Cover,43,A,823.11
+74,F9913SB,Case 2 - Terminal Cover with /PR,57,A,1116.8
+76,F9913CA,Case 3 - Terminal Cover,57,B,389.52
+77,F9913DF,Case 3 - Terminal Cover with /PR,57,B,790.02
+79,F9913DA,Case 3 - Terminal Cover with /X2,57,B,0
+81,F9913QG,"Case 1, EC-1/2 NPT",33,A,1221.58
+83,F9913QH,"Case 1, EC-1/2 NPT with Cert",33,A,1242.95
+85,F9913RU,"Case 1, EC-1/2 NPT,  & /X2",57,A,1674.51
+87,F9913RV,"Case 1, EC-1/2 NPT,  with cert & /X2",57,A,1674.51
+89,F9913QJ,"Case 1, EC-M20",33,A,1241.57
+91,F9913RW,"Case 1, EC-M20 with /X2",57,A,1674.51
+93,F9913QA,"Case 1, EC-G1/2 (EC Code - 0)",57,A,0
+95,F9913QC,"Case 1, EC-G1/2 (EC Code - 5 or A)",57,A,0
+97,F9913RN,"Case 1, EC-G1/2 with /X2  (EC Code - 0)",57,A,0
+99,F9913RQ,"Case 1, EC-G1/2 with /X2 (EC Code - 5 or A)",57,A,0
+100,F9913WG,"Case 2, EC-1/2 NPT (E-Conn 2 or C)",57,A,7269.5
+101,F9913WH,"Case 2, EC-1/2 NPT with Cert (E-Conn 2 or C)",43,A,7268.81
+102,F9913WJ,"Case 2, M20",43,A,7270.18
+103,F9913WC,"Case 2, EC-G1/2 (EC Code - A)",57,A,0
+105,F9913AL,"Case 3, EC-1/2 NPT ",57,A,1418.06
+107,F9913AJ,"Case 3, EC-M20 (E-Conn 4 or D)",57,A,0
+109,F9913BJ,"Case 3, EC-M20 with /X2 (E-Conn 4 or D)",57,A,0
+111,F9913BL,"Case 3, EC-1/2 NPT with /X2 (E-Conn 2 or C)",57,A,0
+112,F9300TE,Mounting Bracket - SS304 Flat type (Code B),36,B,434.3
+113,F9340EM,Mounting Bracket - SS304 L type (Code D),71,B,577.71
+114,F9273CZ,Mounting Bracket Bolt  for SS304 mounting bracket (Code B or D),57,C,16.55
+115,D0117XL-A,U - Bolt Assy for Bracket - SS304 (Code B or D),50,C,53.09
+116,F9900SB,Mounting Bracket - SS316 Flat type (Code J),43,B,654.21
+117,F9900SD,Mounting Bracket - SS316 L- type (Code K),36,A,1238.81
+118,F9900SH,Mounting Bracket Bolt - for SS316 mounting bracket(Code J or K),43,C,22.75
+119,F9900SN,U Bolt Assy - SS316 U bolt for EJA110 or 430 or 530 (Big),43,C,448.78
+120,F9900SF,Mounting Bracket - SS316 for EJA530 or for bottom PC (EJA110 or 430),57,B,379.85
+121,F9900SG,Mounting Bracket Bolt - SS316 bolt for bottom Installation,36,C,44.12
+122,F9900SK,Mounting Bolt - SS316 U bolt for EJA530 (Small),43,C,54.46
+123,F9340XX,Process Connector - SS 1/2 NPT ,50,B,419.83
+124,F9340TX,Process Connector - Monel 1/2 NPT,71,A,2852.65
+125,F9340TW,Process Connector - Monel 1/2 RC,113,A,0
+126,F9340TZ,Process Connector - Monel 1/4 NPT,113,A,13914.42
+127,F9340TY,Process Connector - Monel 1/4 RC,113,A,0
+128,F9340WW,Process Connector - Hastelloy 1/2 RC,71,A,0
+129,F9340WY,Process Connector - Hastelloy 1/4 RC,71,A,0
+130,F9340WZ,Process Connector - Hastelloy 1/4 NPT,71,A,0
+131,F9340XW,Process Connector - SS 1/2 RC,78,B,545.99
+132,F9340WX,Process Connector -  Hastelloy 1/2 NPT ,71,A,2723.05
+133,F9340XY,Process Connector - SS 1/4 RC,78,B,612.85
+134,F9340XZ,Process Connector - SS 1/4 NPT,57,B,612.85
+135,F9900AU,Process Connector Bolt - B7 Carbon Steel (Code-J),39,C,65.49
+136,F9900AS,Process Connector Bolt - SS316L (Code-G),39,C,104.79
+137,F9340AZ,Process Connector Bolt - 660 SST (Code-C),78,B,443.27
+138,D0114RB,Gasket for Process Connector,50,C,11.72
+139,F9342MK,Nut for LCD Assy.,57,C,4.14
+140,F9341JP,O-Ring for Meter / Blind Cover,895,C,6.89
+141,F9900GS,O-Ring for Meter / Blind Cover when /HE,57,C,94.45
+142,F9910LE,O-Ring for Terminal Cover,43,C,6.2
+143,F9900GR,O-Ring for Terminal Cover when /HE,57,C,75.15
+144,F9900GH,Capsule O-ring,43,C,3.45
+145,F9900GT,Capsule O-ring when /HE,57,C,53.09
+146,G9303NC,O-Ring for zero adjust screw,895,C,0.69
+147,F9900GV,O-Ring for zero adjust screw when /HE,57,C,8.27
+148,F9270BJ,Shaft - Zero adjust Screw,43,C,28.27
+149,F9900RL,Shaft - Zero adjust Screw for Case-2 or when /HC option,43,C,61.36
+150,Y9812PS,Pin for Zero adjust screw,57,C,0.69
+151,F9270BK,Collar for zero adjust screw,57,C,4.14
+152,F9341JS,Zero Screw Cover,50,C,2.76
+153,F9900RS,Name Plate,57,C,15.86
+154,F9900RE,Tag Plate,57,C,12.41
+155,F9900RF,Certification Tag Plate,57,C,12.41
+156,F9900RM,SS316 Tag plate when /N4,50,C,15.86
+157,F9900GG,Ring for Tag plate when /N4,43,C,6.89
+158,F9910LS,Terminal Block,85,C,62.05
+159,Y9308JY,Terminal Block holding Screw,40,C,0.69
+160,F9342NJ,2-Core Cable,57,C,20.68
+161,A1462CC,Feedthrough Capacitor for Hart & Brain,134,C,40.68
+162,F9342YB,Feedthrough Capacitor for FF & Profi bus,43,C,77.22
+163,F9342YC,Feedthrough Capacitor when /HE,92,C,134.43
+164,Y9501WL,Washer for feed through capcitor,40,C,0.69
+165,F9900RG,"Screw - Name Plate, Tag Plate & Cert. Tag Plate for Case-1 or 3",40,C,0.69
+166,F9900RR,"Screw - Name Plate, Tag Plate & Cert. Tag Plate for Case-2",43,C,1.38
+167,F9900RP,Cover lock screw,43,C,2.76
+168,F9913MB,Cover lock screw (bolt) incase of Flame proof cert. - case 3,43,C,11.03
+169,F9900GC,Case Lock Screw for Case-1 or 3,36,C,1.38
+170,F9900RH,Case Lock Screw for Case-2 or when /HC option,43,C,7.58
+171,F9900RJ,Rotation Stopper Screw,40,C,4.83
+172,F9900GE,Rotation Stopper Plate,50,C,10.34
+173,F9900GD,Rotation Stopper Plate for  EJA110E 'F' cap or Wetted part other than 'S' for EJA110E & EJA430E,50,C,13.1
+174,F9940WG,Rotation Stopper Plate for EJA530 'D' cap,57,C,13.1
+175,F9940WJ,Hook  for EJA530 - D capsule,43,C,13.1
+176,F9940WF,Pipe Assy.,57,C,33.78
+177,F9300AF,Capsule Oil seal hole closing plate,43,C,0.69
+178,F9900EA,GASCKET,64,C,26.2
+179,F9900GZ,"Screw for fixing zero screw cover, Ext. Gr., Int. Gr. & Back board for Case 1 or 2 or Int. Gr. & Back board for Case 3",57,C,1.38
+180,F9341JZ,Ext. Gr. Screw & clamp for  case 1 or 2 with Cert.,99,C,17.92
+181,F9341JW,Ext. Gr. Screw washer for  case 1 or 2 or 3 with Cert.,50,C,1.38
+182,F9913MA,Screw for fixing zero screw cover for Case 3,43,C,2.76
+183,F9913MC,Ext. Gr. Screw for Case 3,71,C,4.83
+184,F9913MD,Ext. Gr. Screw & clamp for  Case 3 with Cert.,64,C,25.51
+185,F9275ZZ,Oil free Label for /K series,50,C,6.89
+186,F9900MK,Oil & Water free label for /K5 or /K6 option,49,C,15.17
+187,F9340ND,Oil free Label for /K series,64,C,6.2
+188,F9203ZA,White Cap for flange cover incase of /K1 or /K2 or /K5 or /K6,50,C,1.38
+189,F9340NJ,Label for Process connector incase of /K1 or /K2 or /K5 or /K6,57,C,5.52
+190,C1016EZ,Silicone gell,43,C,4.83
+191,F9913MY,Blind Plug - SS304 1/2 NPT (E-Conn 7),43,C,91
+192,F9913MZ,Blind Plug - SS316 1/2 NPT (E-Conn C),57,B,215.09
+193,F9900GP,Blind Plug - SS304 M20,50,B,232.33
+194,F9900GX,Blind Plug - SS304 M20 with /HE,57,B,308.85
+195,F9900GK,Blind Plug - SS316 M20,57,B,306.09
+196,F9900GB,Gasket for SS316 Blind Plug (M20),57,C,4.83
+197,F9900GW,Gasket for SS316 Blind Plug (M20) when /HE,57,C,16.55
+198,F9900GQ,Blind Plug - SS304 G1/2,50,B,253.69
+199,F9900GY,Blind Plug - SS304 G1/2 when /HE,57,B,333.67
+200,F9900GL,Blind Plug - SS316 G1/2,57,B,408.81
+201,G9330DB,Red cap for EC (EJA110 or 430 or 530) & Process connection (EJA530 - 4),57,C,1.38
+202,G9330CB,White cap for Process connection (EJA530 - 7 or 8),57,C,5.52
+203,X9947QF,White cap for Process connection (EJA530 - 9),99,C,8.27
+204,D0114PB,VENT SCREW (9),43,C,66.18
+205,D0114RZ,"Drain PLUG (8, 9)",36,C,99.97
+206,F9340SB,VENT PLUG (9),57,C,128.22
+207,F9270HE,VENT SCREW (7),71,C,91.69
+208,F9340SD,VENT PLUG (7),50,C,150.28
+209,F9275ED,VENT PLUG FOR OPTION /K SERIES,41,B,301.96
+210,F9275EF,VENT SCREW FOR OPTION /K SERIES,43,B,281.97
+211,F9275EG,NEEDLE FOR OPTION /K SERIES,43,C,150.28
+212,Y9400ET,RET RING FOR OPTION /K SERIES,43,C,0.64
+213,F9311AG,Vent plug for option code /U1,50,A,923.77
+214,F9311BG,Vent plug for option code /U1 + /K series,57,A,1512.5
+215,F9340GN,O-Ring for Kidney flanges,57,C,37.23
+216,F9900EF,Gasket for /GS option,43,B,662.5
+217,F9340XU,Kidney Falnge for Option code /N2 or /N3,57,B,545.99
+218,F9145YN,DAIFLOIL,50,A,2070.2
+219,F9900AA,BOLT (G),85,C,48.26
+220,F9900AC,BOLT (J),39,C,58.6
+221,F9900AE,"Bolt for ""C""",43,B,426.72
+222,F9900BA,NUT (G),57,C,22.06
+223,F9900BC,NUT (J),32,C,27.58
+224,F9900BE,"Nut for ""C""",32,B,446.71
+225,F9900TB,FLANGE (STD),39,A,1009.94
+226,F9900TD,FLANGE (Instl. 7),32,A,1193.31
+227,F9900TE,FLANGE (430 std),32,A,1209.17
+228,F9900TF,FLANGE (430 Instl. 7),32,A,1193.31
+229,F9900TH,FLANGE (Bottom),43,A,999.6
+230,F9900TL,"Flange for Inst. ""9"" with /GS or N1 option.",50,A,1244.33
+231,F9900TM,FLANGE (Wika),43,A,1428.39
+232,F9900TY,"Flange for Inst. ""B"" (L - side).",43,A,1008.57
+233,F9900UB,"Flange for Inst. ""U"".",43,A,1352.56
+234,F9900UK,"Flange for Inst. ""U"" (L - side).",43,A,1402.89
+235,F9341JA,Meter cover Glass,57,C,119.96
+236,F9341JD,Spring for Meter cover,57,C,30.34
+237,F9341JE,Ring for Meter cover,57,C,31.03
+238,F9341JQ,O-ring for Meter cover W/O /HE ,895,C,4.14
+239,F9900GU,O-ring for Meter cover With /HE ,57,C,62.74
+241,F9913CS,Case 3 - Meter Cover,57,B,369.51
+242,F9913SE,Case 2 - Meter Cover,57,A,816.92
+244,F9913TS,Case 1 - Meter Cover ,57,B,277.83
+246,F9913VS,Case 1 - Meter Cover with /X2,57,B,369.51
+247,F9200CS,Drain plug,45,B,
+248,F9340SA,Vent plug ,45,B,
+249,F9350ER,Vent plug ,71,B,
+250,F9350EW,Flange,57,B,
+251,F9350KZ,Drain plug,57,B,
+252,F9350RS,Vent screw,71,B,
+253,F9900TA,Flange,43,B,
+254,CPA110Y-NMSNN-NNNNN,Capsule Assy.,40,,
+255,CPA530Y-NBS4N-0NNNN,Capsule Assy.,40,,
+256,CPA530Y-NBS7N-0NNNN,Capsule Assy.,40,,
+257,CPA530Y-NCS4N-0NNNN,Capsule Assy.,40,,
+258,CPA110Y-NFS5J-9NNNN,Capsule Assy.,40,,
+259,CPA110Y-NHSNN-NNNNN,Capsule Assy.,40,,
+260,CPA430Y-NASNN-NNNNN,Capsule Assy.,40,,
+261,CPA530Y-NDS4N-0NNNN,Capsule Assy.,40,,
+262,CPA530Y-NAS4N-0NNNN,Capsule Assy.,40,,
+263,CPA530Y-NCS7N-0NNNN,Capsule Assy.,40,,
+264,CPA430Y-NBSNN-NNNNN,Capsule Assy.,40,,
+265,CPA110Y-NMSNN-NNNNN/K3,Capsule Assy.,40,,
+266,CPA530Y-NDS7N-0NNNN,Capsule Assy.,40,,
+267,CPA110Y-NFS5G-9NNNN,Capsule Assy.,40,,
+268,CPA530Y-NAS7N-0NNNN,Capsule Assy.,40,,
+269,CPA110Y-NMSNN-NNNNN/A1,Capsule Assy.,40,,
+270,CPA430Y-NHSNN-NNNNN,Capsule Assy.,40,,
+271,CPA110Y-NVSNN-NNNNN,Capsule Assy.,40,,
+272,CPA530Y-NBH4N-0NNNN,Capsule Assy.,40,,
+273,CPA530Y-NBH7N-0NNNN,Capsule Assy.,,,
