@@ -252,7 +252,7 @@ class BomExplosion(APIView):
             model_qty = list(dataset['QTY'])
             final = pd.DataFrame()
             for i in range(len(code)):
-                d1 = main_bom_explosion(code[i], model_qty[i])
+                d1 = main_bom_explosion(code[i], model_qty[i])   # calling main bom explosion
                 final = final.append(d1, ignore_index=True)
             # sum of part no and qty in Final QTY
             final['Final_Qty'] = final.groupby(['PART NO.'])['QTY'].transform('sum')

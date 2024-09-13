@@ -30,11 +30,38 @@ def main_bom_explosion(code, qty, week=None):
 
     def cpa_code(st_code, option_code, model_name, app_option, cpa):
         if model_name[1] + model_name[2] in st_code:
-            if model_name[2] == 'L':
+            # If 'ML' should be treated as 'MS'
+            if model_name[1] == 'M' and model_name[2] == 'L':
+                cpa = cpa + 'MS' + "NN-NNNNN"
+
+            # If 'HL' should be treated as 'HS'
+            elif model_name[1] == 'H' and model_name[2] == 'L':
+                cpa = cpa + 'HS' + "NN-NNNNN"
+
+            # If 'VL' should be treated as 'VS'
+            elif model_name[1] == 'V' and model_name[2] == 'L':
+                cpa = cpa + 'VS' + "NN-NNNNN"
+
+            # If 'AL' should be treated as 'AS'
+            elif model_name[1] == 'A' and model_name[2] == 'L':
+                cpa = cpa + 'AS' + "NN-NNNNN"
+
+            # If 'BL' should be treated as 'BS'
+            elif model_name[1] == 'B' and model_name[2] == 'L':
+                cpa = cpa + 'BS' + "NN-NNNNN"
+
+            elif model_name[2] == 'L':
                 cpa = cpa + model_name[1] + 'S' + "NN-NNNNN"
+
             else:
                 cpa = cpa + model_name[1] + model_name[2] + "NN-NNNNN"
 
+            # If third character is 'S', remove 'K1' and 'K5' from option_code
+            if model_name[2] == 'S':
+                option_code = [opt for opt in option_code if opt not in ['K1', 'K5']]
+                # print(option_code)
+
+            # Option code handling
             if option_code:
                 temp = ['K2', 'K3', 'K6']
                 for i in option_code:
@@ -127,7 +154,6 @@ def main_bom_explosion(code, qty, week=None):
         st_code = ['MS', 'HS', 'VS', 'ML', 'HL', 'VL']
         # app_option = ['K1', 'K2', 'K3', 'K5', 'K6', 'T12', 'T13', 'HG', 'U1', 'HD', 'GS', 'N1', 'N2', 'N3', 'A1', 'A2']
         app_option = ['K3', 'HG', 'U1', 'HD', 'GS', 'N1', 'N2', 'N3', 'A1', 'A2']
-
         cpa = cpa_code(st_code, option_code, model_name, app_option, cpa)  # calling cpa_code
 
     elif model_code[3:6] == '430':
@@ -139,7 +165,7 @@ def main_bom_explosion(code, qty, week=None):
     else:  # 530E
         cpa = cpa + code[9:15] + "NNNN"
         if option_code:
-            app_option = ['K1', 'A1', 'A2', 'HG']
+            app_option = ['K1', 'K5', 'A1', 'A2', 'HG']
             for i in option_code:
                 if i in app_option:
                     cpa = cpa + "/" + i
