@@ -9649,3 +9649,44 @@ WARNING  2024-09-12 12:51:41,752  D:\DemandForecast\DFBackend\venv\lib\site-pack
 
 WARNING  2024-09-13 11:14:15,741  D:\DemandForecast\DFBackend\venv\lib\site-packages\django\utils\log.py  log  222  19928  Unauthorized: /modeltoparts/ 
 
+ERROR  2024-09-13 15:15:21,098  D:\DemandForecast\DFBackend\venv\lib\site-packages\django\utils\log.py  log  222  9076  Internal Server Error: /modeltoparts/ 
+Traceback (most recent call last):
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\DemandForecast\DFBackend\datas\views\chartViews.py", line 249, in post
+    dataset = pd.read_excel(request.FILES['modelFile'])
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\pandas\io\excel\_base.py", line 364, in read_excel
+    io = ExcelFile(io, storage_options=storage_options, engine=engine)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\pandas\io\excel\_base.py", line 1195, in __init__
+    raise ValueError(
+ValueError: Excel file format cannot be determined, you must specify an engine manually.
+WARNING  2024-09-13 15:15:46,200  D:\DemandForecast\DFBackend\venv\lib\site-packages\django\utils\log.py  log  222  12768  Bad Request: /data/ 
+
+WARNING  2024-09-13 15:15:54,973  D:\DemandForecast\DFBackend\venv\lib\site-packages\django\utils\log.py  log  222  12768  Bad Request: /data/ 
+
+WARNING  2024-09-13 15:18:00,844  D:\DemandForecast\DFBackend\venv\lib\site-packages\django\utils\log.py  log  222  14476  Bad Request: /data/ 
+
+ERROR  2024-09-13 15:25:00,147  D:\DemandForecast\DFBackend\venv\lib\site-packages\django\utils\log.py  log  222  17268  Internal Server Error: /data/ 
+
+ERROR  2024-09-13 15:25:55,952  D:\DemandForecast\DFBackend\venv\lib\site-packages\django\utils\log.py  log  222  4008  Internal Server Error: /data/ 
+
+ERROR  2024-09-13 15:26:59,058  D:\DemandForecast\DFBackend\venv\lib\site-packages\django\utils\log.py  log  222  6424  Internal Server Error: /data/ 
+

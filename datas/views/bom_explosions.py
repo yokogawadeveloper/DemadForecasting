@@ -59,7 +59,10 @@ def main_bom_explosion(code, qty, week=None):
             # If third character is 'S', remove 'K1' and 'K5' from option_code
             if model_name[2] == 'S':
                 option_code = [opt for opt in option_code if opt not in ['K1', 'K5']]
-                # print(option_code)
+
+            # Check if both 'MG1' and 'MH1' are present, only consider 'MG1'
+            if 'MG1' in option_code and 'MH1' in option_code:
+                option_code.remove('MH1')
 
             # Option code handling
             if option_code:
@@ -109,13 +112,11 @@ def main_bom_explosion(code, qty, week=None):
     if model_code == 'EJA530E':
         column_names = ['OUTPUT', 'SPAN', 'MATERIAL', 'P-CONNECT', 'HOUSING', 'E-CONNECT', 'INDICATOR', 'BRACKET']
     else:
-        column_names = ['OUTPUT', 'SPAN', 'MATERIAL', 'P-CONNECT', 'BOLT-NUT', 'INSTALL', 'HOUSING', 'E-CONNECT',
-                        'INDICATOR', 'BRACKET']
+        column_names = ['OUTPUT', 'SPAN', 'MATERIAL', 'P-CONNECT', 'BOLT-NUT', 'INSTALL', 'HOUSING', 'E-CONNECT','INDICATOR', 'BRACKET']
     # Iterating through the list of columns
     for i in range(len(column_names)):
         d1 = eliminate(i, column_names, d1)
     option_code = code[20:]
-
     temp = option_code.split('/')
     for i in list(set(temp).intersection(list(options['S/W Options']))):
         temp.remove(i)
@@ -153,19 +154,19 @@ def main_bom_explosion(code, qty, week=None):
     if model_code[3:6] == '110':
         st_code = ['MS', 'HS', 'VS', 'ML', 'HL', 'VL']
         # app_option = ['K1', 'K2', 'K3', 'K5', 'K6', 'T12', 'T13', 'HG', 'U1', 'HD', 'GS', 'N1', 'N2', 'N3', 'A1', 'A2']
-        app_option = ['K3', 'HG', 'U1', 'HD', 'GS', 'N1', 'N2', 'N3', 'A1', 'A2']
+        app_option = ['K3', 'HG', 'U1', 'HD', 'GS', 'N1', 'N2', 'N3', 'A1', 'A2','MG1', 'MH1']
         cpa = cpa_code(st_code, option_code, model_name, app_option, cpa)  # calling cpa_code
 
     elif model_code[3:6] == '430':
         st_code = ['AS', 'HS', 'BS', 'AL', 'HL', 'BL']
         # app_option = ['K1', 'K2', 'K3', 'K5', 'K6', 'A1', 'A2', 'T11', 'T01', 'T12', 'U1', 'GS', 'N1', 'N2', 'N3']
-        app_option = ['K1', 'A1', 'A2', 'U1', 'GS', 'N1', 'N2', 'N3']
+        app_option = ['K1', 'A1', 'A2', 'U1', 'GS', 'N1', 'N2', 'N3','MG1', 'MH1']
         cpa = cpa_code(st_code, option_code, model_name, app_option, cpa)  # calling cpa_code
 
     else:  # 530E
         cpa = cpa + code[9:15] + "NNNN"
         if option_code:
-            app_option = ['K1', 'K5', 'A1', 'A2', 'HG']
+            app_option = ['K1', 'K5', 'A1', 'A2', 'HG','MG1', 'MH1']
             for i in option_code:
                 if i in app_option:
                     cpa = cpa + "/" + i
