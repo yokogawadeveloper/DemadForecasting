@@ -9690,3 +9690,5 @@ ERROR  2024-09-13 15:25:55,952  D:\DemandForecast\DFBackend\venv\lib\site-packag
 
 ERROR  2024-09-13 15:26:59,058  D:\DemandForecast\DFBackend\venv\lib\site-packages\django\utils\log.py  log  222  6424  Internal Server Error: /data/ 
 
+WARNING  2024-09-17 15:17:44,620  D:\DemandForecast\DFBackend\venv\lib\site-packages\django\utils\log.py  log  222  19912  Unauthorized: /modeltoparts/ 
+

@@ -2,7 +2,6 @@ import numpy as np
 import os.path
 import pandas as pd
 import smtplib
-from datetime import datetime as dt
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from wsgiref.util import FileWrapper
@@ -14,12 +13,9 @@ from rest_framework import status
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.response import Response
 from rest_framework.views import APIView
-
-from common.commonFunc import input_data
 from kd.settings import EMAIL_HOST, EMAIL_PORT, EMAIL_HOST_USER, TO_RECEIVER, CC_RECEIVER
 from ..serializers import *
-from .input_explosion import missing_weeks
-from .reference import manufacturing, inventory, cpa_fob, gr_list
+from .reference import manufacturing, inventory, cpa_fob, gr_list, kd_part
 
 
 class DownloadData(APIView):
@@ -93,16 +89,19 @@ class DataCrud(APIView):
         if True:
             for file in request.FILES:
                 file_name = default_storage.delete(os.path.abspath('static/inputFiles/{}.csv'.format(file)))
-                file_name = default_storage.save(os.path.abspath('static/inputFiles/{}.csv'.format(file)),request.FILES[file])
+                file_name = default_storage.save(os.path.abspath('static/inputFiles/{}.csv'.format(file)),
+                                                 request.FILES[file])
 
             thresholdValue = int(request.data['threshold'])
             pipeline_week_user = int(request.data['pipelineWeek'])
             required_week_user = int(request.data['requiredWeek'])
             queryset = inputFromUi.objects.all()
             if not queryset.exists():
-                inputFromUi.objects.filter().create(threshold=thresholdValue, pipelineWeek=pipeline_week_user,requiredWeek=required_week_user)
+                inputFromUi.objects.filter().create(threshold=thresholdValue, pipelineWeek=pipeline_week_user,
+                                                    requiredWeek=required_week_user)
             else:
-                inputFromUi.objects.filter().update(threshold=thresholdValue, pipelineWeek=pipeline_week_user,requiredWeek=required_week_user)
+                inputFromUi.objects.filter().update(threshold=thresholdValue, pipelineWeek=pipeline_week_user,
+                                                    requiredWeek=required_week_user)
 
             pd.options.mode.chained_assignment = None  # default='warn'
             #--------------------------------- Files with path ------------------------------------------#
@@ -110,6 +109,7 @@ class DataCrud(APIView):
             inventory_file = os.path.abspath('static/inputFiles/inventory.csv')
             cpa_fob_file = os.path.abspath('static/inputFiles/cpaFob.csv')
             gr_list_file = os.path.abspath('static/inputFiles/grList.csv')
+            kd_part_file = os.path.abspath('static/inputFiles/kdParts.csv')
 
             # ------------------------------- Start Manufacturing ---------------------------------------#
             try:
@@ -133,55 +133,11 @@ class DataCrud(APIView):
             except Exception as e:
                 return Response({'message': f'Error processing CAP FOB file: {str(e)}'}, status=500)
             # -------------------------------- Start KD Parts -----------------------------#
-            kdparts_list = pd.read_csv(os.path.abspath('static/inputFiles/kdParts.csv'), low_memory=False,encoding='unicode_escape')
-            kdparts_col = list(kdparts_list.columns)
-            kdparts_dataset = input_data(kdparts_col, 'kdparts')
 
-            if not isinstance(kdparts_dataset, list):
-                if kdparts_dataset.status_code == 400:
-                    data = kdparts_dataset.data
-                    return Response(data)
-
-            kdparts_list = kdparts_list[
-                [kdparts_dataset[0], kdparts_dataset[1], kdparts_dataset[2], kdparts_dataset[3], kdparts_dataset[4]]]
-            kdparts_list = kdparts_list.rename(index=str, columns={kdparts_dataset[0]: "Purchase_Order",
-                                                                   kdparts_dataset[1]: "Item"})
-            kdparts_list['Purchase_Order'] = kdparts_list['Purchase_Order'].astype(str)
-            kdparts_list = kdparts_list[kdparts_list['Purchase_Order'].str.startswith('4')]
-            kdparts_list[kdparts_dataset[2]] = kdparts_list[kdparts_dataset[2]].astype('datetime64[ns]')
-            final_kdparts = kdparts_list.merge(gr_list, on=['Purchase_Order', 'Item'], how='left', indicator=True)
-            final_kdparts = final_kdparts[final_kdparts['_merge'] == 'left_only']
-            pipeline_list = final_cpa.append(final_kdparts, ignore_index=True)
-            pipeline_list[kdparts_dataset[2]] = pipeline_list[kdparts_dataset[2]].astype('datetime64[ns]')
-            pipeline_list['Final_Date'] = pipeline_list[kdparts_dataset[2]] + pd.DateOffset(days=12)
-            pipeline_list['Week_Number'] = pipeline_list['Final_Date'].dt.week
-            pipeline_list['Final_Year'] = pipeline_list['Final_Date'].dt.year
-            current_year = dt.date(dt.now()).year
-            pipeline_list.loc[pipeline_list.Final_Year < current_year, 'Week_Number'] = 1
-            pipeline_list.loc[pipeline_list.Final_Year == current_year + 1, 'Week_Number'] += 52
-            pipeline_list.loc[pipeline_list.Final_Year == current_year + 2, 'Week_Number'] += 104
-            pipeline_list = pipeline_list.sort_values(by=['Week_Number'])
-            pipeline_list = pipeline_list.rename(index=str, columns={"MS Code": "PART NO.", "Qty": "QTY"})
-            pipeline_list = pipeline_list[["PART NO.", "QTY", "Week_Number"]]
-            pipeline_list['Discrepancy'] = 0
-            pipeline_list['QTY'] = pipeline_list.groupby(['PART NO.', 'Week_Number'])['QTY'].transform('sum')
-            pipeline_list.drop_duplicates(subset=['PART NO.', 'Week_Number'])
-            pipeline_list.loc[pipeline_list['Week_Number'] <= dt.today().isocalendar()[1], 'Discrepancy'] = 1
-            pipeline_list = pipeline_list.pivot_table("QTY", ["PART NO.", "Discrepancy"], "Week_Number")
-            pipeline_list = pipeline_list.reset_index()
-            current_week = dt.today().isocalendar()[1]
-            columns_list = pipeline_list.columns.tolist()[2:]
-            column_begin = [x for x in columns_list if x < current_week]
-            individual_columns = list()
-            for x in range(len(column_begin), len(columns_list)):
-                individual_columns.append(columns_list[x])
-                if (len(individual_columns) >= 8): break;
-
-            individual_columns = missing_weeks(individual_columns)
-            # individual_columns = sorted(individual_columns)[:8]
-            column_end = [i for i in columns_list if i > individual_columns[len(individual_columns) - 1]]
-            pipeline_list['Pipeline Total'] = pipeline_list[columns_list].sum(axis=1)
-            pipeline_list['Pipeline Onwards'] = pipeline_list[column_end].sum(axis=1)
+            try:
+                current_year, current_week, individual_columns, pipeline_list = kd_part(kd_part_file, final_cpa)
+            except Exception as e:
+                return Response({'message': f'Error processing CAP FOB file: {str(e)}'}, status=500)
 
             try:
                 pipe_list = pipeline_list[
@@ -193,24 +149,19 @@ class DataCrud(APIView):
                 pipe_list = pipeline_list[
                     ['PART NO.', 'Discrepancy', 'Pipeline Total'] + individual_columns + ['Pipeline Onwards']]
 
+            # From Lead Time Category Price extract the datas
             lead_time_price = pd.read_csv(os.path.abspath('static/LeadTimeCategoryPrice.csv'))
-            # lead_time = pd.read_csv(os.path.abspath('static/leadTime.csv'))
-            # lead_time = lead_time.rename(index=str, columns={"Part No.": "PART NO."})
             lead_time_price["MOQ"] = 1
             final = pd.merge(proc_list, inv_list[['PART NO.', 'Stock Qty']], on=['PART NO.'], how='left')
             final = pd.merge(final, pipe_list, on=['PART NO.'], how='left')
             final = pd.merge(final, lead_time_price[['PART NO.', 'Lead Time', 'MOQ']], on=['PART NO.'], how='left')
-
             cols = final.columns.tolist()
             cols = cols[0:2] + cols[len(cols) - 2:len(cols)] + cols[2:len(cols) - 2]
             cols = [val for val in cols if not str(val).endswith("_x") if not str(val).endswith("_y")]
             final = final[cols]
-
             final['Pipeline Total'] = final['Pipeline Total'].fillna(0)
             final['Stock Qty'] = final['Stock Qty'].fillna(0)
-
             final['Total Available'] = final['Stock Qty'] + final['Pipeline Total']
-
             final['Difference'] = final['Total Available'] - final['Total Required']
             cpa_leadtime = lead_time_price
             final = pd.merge(final, cpa_leadtime[['PART NO.', 'Lead Time']], on=['PART NO.'], how='left')
@@ -220,43 +171,28 @@ class DataCrud(APIView):
             final['Lead Time'].fillna(50, inplace=True)
             final['Estimated Delivery Week'] = final['Lead Time'] / 7 + current_week
             final = final.astype({"Estimated Delivery Week": int})
-
-            # price_category = pd.read_csv((os.path.abspath('static/categoryPrice.csv')))
             price_category = lead_time_price
-
             final = pd.merge(final, price_category[['PART NO.', 'Std. Price', 'Category']], on=['PART NO.'], how='left')
-
             final["Std. Price"] = final["Std. Price"].astype(float)
             final["Total Cost"] = final['Difference'] * final['Std. Price']
-
             cols = list(final.columns)
-
             pipeline_columns = cols[cols.index('Pipeline Total') + 1:cols.index('Pipeline Onwards')]
-
             pipeline_columns = [int(i) for i in pipeline_columns]
-
             discrepancy = final[final['Discrepancy'] == 1]
-
             discrepancy = discrepancy.drop(['Discrepancy'], axis=1)
-
             writer = pd.ExcelWriter(os.path.join(path, r'Discrepancy.xlsx'), engine='xlsxwriter')
             discrepancy.to_excel(writer, sheet_name='Sheet1')
             writer.save()
             final['sum'] = discrepancy.iloc[:, 5:13].sum(axis=1)
             final[final.columns[18]] = final[[final.columns[18], 'sum']].sum(axis=1)
             final = final.drop(['sum'], axis=1)
-
             discrepancy = discrepancy[['PART NO.', 'PART NAME', 'Pipeline Total']]
             Category = final[['Category', 'PART NO.']]
             final = final.drop_duplicates(subset=['PART NO.', 'Current', 'Lead Time', 'Total Required'], keep='first',
                                           inplace=False)
-
             final = final.groupby(['PART NO.', 'PART NAME'], sort=False).sum().reset_index()
             final = final.merge(Category, on='PART NO.')
-
-            # Delete the pielin columns
-            # final.drop(delete_columns, axis=1, inplace=True)
-
+            # Delete the pipline columns from Final Predictions file
             predict = pd.read_csv(os.path.abspath('static/finalPrediction.csv'))
             predict = predict[["PART NO.", "PART NAME", "Final_Qty", "Year"]]
             part_no = list(final['PART NO.'])
@@ -277,22 +213,19 @@ class DataCrud(APIView):
                 else:
                     predicted_values.append(0)
 
+            # Create Table from pandas
             predict_pivot = predict.pivot_table("Final_Qty", ["PART NO.", "PART NAME"], "Year")
             predict_pivot = predict_pivot.reset_index()
-
             columns_list = predict_pivot.columns.tolist()
             columns_list.pop(0)
             columns_list.pop(0)
-
             column_begin = list()
             for i in columns_list:
                 if i <= current_year - 4:
                     column_begin.append(i)
             predict_pivot.drop(column_begin, axis=1, inplace=True)
             predict_pivot.drop('PART NAME', axis=1, inplace=True)
-
             final = pd.merge(final, predict_pivot, on=['PART NO.'], how='left')
-
             final['Prediction for current year'] = predicted_values
             final['Prediction for current year'][final['Prediction for current year'] < 0] = 0
             final['Monthly Prediction'] = final['Prediction for current year'] / 12
@@ -302,7 +235,7 @@ class DataCrud(APIView):
             Threshold_qty['Threshold'] = Threshold_qty["Consumption Percentage(%)"] * thresholdValue
             Threshold_qty = Threshold_qty.drop('Consumption Percentage(%)', axis=1)
             final = pd.merge(final, Threshold_qty, how='left', on=['PART NO.'])
-            #test for alert
+            # test for alert
             indexNum_pipeline = final.columns.tolist().index('Pipeline Total')
             indexNum_required = final.columns.tolist().index('Current')
             datalist_pipeline = final.iloc[:, indexNum_pipeline + 1:int(pipeline_week_user + 1)].fillna(0).sum(axis=1)
@@ -329,15 +262,13 @@ class DataCrud(APIView):
                 final['value'][
                     (df['stock_status'] >= df['threshold']) & (df['stock_status'] >= df['requirements'])] = False
                 final['value'][(df['stock_status'] < df['threshold']) & (df['stock_status'] < df['requirements']) & (
-                        df['threshold'] < df['requirements'])] = df['threshold'] - df['stock_status']  #orange
+                        df['threshold'] < df['requirements'])] = df['threshold'] - df['stock_status']  # orange
                 final['value'][(df['stock_status'] <= df['threshold']) & (df['stock_status'] >= df['requirements'])] = \
-                    df['threshold'] - df['stock_status']  #blue
+                    df['threshold'] - df['stock_status']  # blue
                 final['value'][(df['stock_status'] >= df['threshold']) & (df['stock_status'] <= df['requirements'])] = \
-                    df['requirements'] - df['stock_status']  #red
+                    df['requirements'] - df['stock_status']  # red
                 del df
-
             createAlert(pending_requirements, stock_status, final['Threshold'])
-
             alert = final[final['alert'] != False]
             alert = alert[['PART NO.', 'value', 'alert']]
             alert['value'] = alert['value'].abs().apply(np.ceil)
@@ -408,11 +339,9 @@ class DataCrud(APIView):
 
             final.to_excel(writer_object, sheet_name='Sheet1', startrow=2,
                            header=True)  #final replace with any other dataframe
-
             workbook_object = writer_object.book
             worksheet_object = writer_object.sheets['Sheet1']
             worksheet_object.activate()
-
             worksheet_object.set_row(1, 50)
             worksheet_object.set_row(0, 50)
             worksheet_object.set_row(2, 30)
@@ -427,64 +356,36 @@ class DataCrud(APIView):
             worksheet_object.merge_range(1, o + 1, 1, p, 'History', merge_format)
             worksheet_object.merge_range(1, q, 1, r, 'Prediction', merge_format)
 
-            week = workbook_object.add_format({
-                'bg_color': '#FFFFFF',
-                'border': 1
-            })
-            pipeline = workbook_object.add_format({
-                'bg_color': '#FFFFFF',
-                'border': 1
-            })
-            partstatus = workbook_object.add_format({
-                'bg_color': '#FFFFFF',
-                'border': 1
-            })
-            history = workbook_object.add_format({
-                'bg_color': '#FFFFFF',
-                'border': 1
-            })
-            prediction = workbook_object.add_format({
-                'bg_color': '#FFFFFF',
-                'border': 1
-            })
-
+            week = workbook_object.add_format({'bg_color': '#FFFFFF', 'border': 1})
+            pipeline = workbook_object.add_format({'bg_color': '#FFFFFF', 'border': 1})
+            partstatus = workbook_object.add_format({'bg_color': '#FFFFFF', 'border': 1})
+            history = workbook_object.add_format({'bg_color': '#FFFFFF', 'border': 1})
+            prediction = workbook_object.add_format({'bg_color': '#FFFFFF', 'border': 1})
             format_green = workbook_object.add_format({'bg_color': '#FFFFFF', 'border': 1})
-
             worksheet_object.set_column(i, j, 10, week)
             worksheet_object.set_column(k + 1, l, 10, pipeline)
             worksheet_object.set_column(m + 1, n + 1, 10, partstatus)
             worksheet_object.set_column(o + 1, p, 10, history)
             worksheet_object.set_column(q, r, 10, prediction)
-
-            worksheet_object.conditional_format('A4:AK1000', {'type': 'formula',
-                                                              'criteria': '=$AL4>0.0',
-                                                              'format': format_green})
-
+            worksheet_object.conditional_format('A4:AK1000',{'type': 'formula', 'criteria': '=$AL4>0.0', 'format': format_green})
             worksheet_object.conditional_format('A4:AK1000', {'type': 'no_blanks', 'format': format_green})
-
             writer_object.save()
             final = kanban
             final = final[['PART NO.', 'Stock Qty', 'Pipeline Total']]
             Threshold_qty = pd.read_excel(os.path.abspath('static/thresholdQty.xlsx'))
-            Threshold_qty = Threshold_qty[
-                ['Kanban Qty', 'No. of kanbans', "Kanban Qty * No' of Kanbans", 'PART NO.']].dropna()
+            Threshold_qty = Threshold_qty[['Kanban Qty', 'No. of kanbans', "Kanban Qty * No' of Kanbans", 'PART NO.']].dropna()
             final = pd.merge(final, Threshold_qty, how='left', on=["PART NO."]).dropna()
             del Threshold_qty
             final['Stock Total at present'] = final['Stock Qty'] + final['Pipeline Total']
-            final['Dropped'] = (
-                    (final["Kanban Qty * No' of Kanbans"] - final['Stock Qty']) / final['Kanban Qty']).apply(
-                np.ceil).apply(abs)
+            final['Dropped'] = ((final["Kanban Qty * No' of Kanbans"] - final['Stock Qty']) / final['Kanban Qty']).apply(np.ceil).apply(abs)
             final['Ordered'] = (final["Pipeline Total"] / final['Kanban Qty']).apply(np.ceil).apply(abs)
-
             lessQty = final.loc[final['Stock Total at present'] < final["Kanban Qty * No' of Kanbans"]]
             moreQty = final.loc[final['Stock Total at present'] > final["Kanban Qty * No' of Kanbans"]]
-
             final = lessQty.append(moreQty, ignore_index=True)
             final = final.drop_duplicates(subset=['PART NO.']).fillna(0)
             final = final.replace([np.inf, -np.inf], np.nan).dropna(how='any')
             final = final.loc[final['Dropped'] != final["Ordered"]]
             final.to_excel(os.path.abspath('static/finalOutput/kanban.xlsx'))
-            if not final.empty:
-                DataCrud.alertMail(final, request)
+            if not final.empty:DataCrud.alertMail(final, request)
             writer.save()
             return Response("file Upload successful", status=status.HTTP_201_CREATED)

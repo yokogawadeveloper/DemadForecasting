@@ -163,7 +163,7 @@ def cpa_fob(file):
 
 
 def gr_list(file, cpa_list):
-    gr_list = pd.read_csv(file, low_memory=False,encoding='unicode_escape')
+    gr_list = pd.read_csv(file, low_memory=False, encoding='unicode_escape')
     gr_list_col = list(gr_list.columns)
     gr_dataset = input_data(gr_list_col, 'grList')
 
@@ -179,3 +179,59 @@ def gr_list(file, cpa_list):
     final_cpa = cpa_list.merge(gr_list, on=['Purchase_Order', gr_dataset[1]], how='left', indicator=True)
     final_cpa = final_cpa[final_cpa['_merge'] == 'left_only']
     return final_cpa
+
+
+def kd_part(file, final_cpa):
+    kdparts_list = pd.read_csv(file, low_memory=False, encoding='unicode_escape')
+    kdparts_col = list(kdparts_list.columns)
+    kdparts_dataset = input_data(kdparts_col, 'kdparts')
+
+    if not isinstance(kdparts_dataset, list):
+        if kdparts_dataset.status_code == 400:
+            data = kdparts_dataset.data
+            return Response(data)
+
+    kdparts_list = kdparts_list[
+        [kdparts_dataset[0], kdparts_dataset[1], kdparts_dataset[2], kdparts_dataset[3], kdparts_dataset[4]]]
+    kdparts_list = kdparts_list.rename(index=str,
+                                       columns={kdparts_dataset[0]: "Purchase_Order", kdparts_dataset[1]: "Item"})
+    kdparts_list['Purchase_Order'] = kdparts_list['Purchase_Order'].astype(str)
+    kdparts_list = kdparts_list[kdparts_list['Purchase_Order'].str.startswith('4')]
+    kdparts_list[kdparts_dataset[2]] = kdparts_list[kdparts_dataset[2]].astype('datetime64[ns]')
+    final_kdparts = kdparts_list.merge(gr_list, on=['Purchase_Order', 'Item'], how='left', indicator=True)
+    final_kdparts = final_kdparts[final_kdparts['_merge'] == 'left_only']
+    pipeline_list = final_cpa.append(final_kdparts, ignore_index=True)
+    pipeline_list[kdparts_dataset[2]] = pipeline_list[kdparts_dataset[2]].astype('datetime64[ns]')
+    pipeline_list['Final_Date'] = pipeline_list[kdparts_dataset[2]] + pd.DateOffset(days=12)
+    pipeline_list['Week_Number'] = pipeline_list['Final_Date'].dt.week
+    pipeline_list['Final_Year'] = pipeline_list['Final_Date'].dt.year
+    current_year = dt.date(dt.now()).year
+    pipeline_list.loc[pipeline_list.Final_Year < current_year, 'Week_Number'] = 1
+    pipeline_list.loc[pipeline_list.Final_Year == current_year + 1, 'Week_Number'] += 52
+    pipeline_list.loc[pipeline_list.Final_Year == current_year + 2, 'Week_Number'] += 104
+    pipeline_list = pipeline_list.sort_values(by=['Week_Number'])
+    pipeline_list = pipeline_list.rename(index=str, columns={"MS Code": "PART NO.", "Qty": "QTY"})
+    pipeline_list = pipeline_list[["PART NO.", "QTY", "Week_Number"]]
+    pipeline_list['Discrepancy'] = 0
+    pipeline_list['QTY'] = pipeline_list.groupby(['PART NO.', 'Week_Number'])['QTY'].transform('sum')
+    pipeline_list.drop_duplicates(subset=['PART NO.', 'Week_Number'])
+    pipeline_list.loc[pipeline_list['Week_Number'] <= dt.today().isocalendar()[1], 'Discrepancy'] = 1
+    pipeline_list = pipeline_list.pivot_table("QTY", ["PART NO.", "Discrepancy"], "Week_Number")
+    pipeline_list = pipeline_list.reset_index()
+    current_week = dt.today().isocalendar()[1]
+    columns_list = pipeline_list.columns.tolist()[2:]
+    column_begin = [x for x in columns_list if x < current_week]
+    individual_columns = list()
+    for x in range(len(column_begin), len(columns_list)):
+        individual_columns.append(columns_list[x])
+        if (len(individual_columns) >= 8): break;
+
+    individual_columns = missing_weeks(individual_columns)
+    # individual_columns = sorted(individual_columns)[:8]
+    column_end = [i for i in columns_list if i > individual_columns[len(individual_columns) - 1]]
+    pipeline_list['Pipeline Total'] = pipeline_list[columns_list].sum(axis=1)
+    pipeline_list['Pipeline Onwards'] = pipeline_list[column_end].sum(axis=1)
+    return current_week, individual_columns, pipeline_list
+
+
+
