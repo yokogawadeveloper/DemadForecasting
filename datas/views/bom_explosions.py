@@ -28,39 +28,99 @@ def main_bom_explosion(code, qty, week=None):
         d1 = d1.loc[~d1.loc[:, 'OPTION:NOT'].str.contains(pattern, na=False)]
         return d1
 
+    # def cpa_code(st_code, option_code, model_name, app_option, cpa):
+    #     if model_name[1] + model_name[2] in st_code:
+    #         # If 'ML' should be treated as 'MS'
+    #         if model_name[1] == 'M' and model_name[2] == 'L':
+    #             cpa = cpa + 'MS' + "NN-NNNNN"
+    #
+    #         # If 'HL' should be treated as 'HS'
+    #         elif model_name[1] == 'H' and model_name[2] == 'L':
+    #             cpa = cpa + 'HS' + "NN-NNNNN"
+    #
+    #         # If 'VL' should be treated as 'VS'
+    #         elif model_name[1] == 'V' and model_name[2] == 'L':
+    #             cpa = cpa + 'VS' + "NN-NNNNN"
+    #
+    #         # If 'AL' should be treated as 'AS'
+    #         elif model_name[1] == 'A' and model_name[2] == 'L':
+    #             cpa = cpa + 'AS' + "NN-NNNNN"
+    #
+    #         # If 'BL' should be treated as 'BS'
+    #         elif model_name[1] == 'B' and model_name[2] == 'L':
+    #             cpa = cpa + 'BS' + "NN-NNNNN"
+    #
+    #         elif model_name[2] == 'L':
+    #             cpa = cpa + model_name[1] + 'S' + "NN-NNNNN"
+    #
+    #         else:
+    #             cpa = cpa + model_name[1] + model_name[2] + "NN-NNNNN"
+    #
+    #         # If third character is 'S', remove 'K1' and 'K5' from option_code
+    #         if model_name[2] == 'S':
+    #             option_code = [opt for opt in option_code if opt not in ['K1', 'K5']]
+    #
+    #         # Check if both 'MG1' and 'MH1' are present, only consider 'MG1'
+    #         if 'MG1' in option_code and 'MH1' in option_code:
+    #             option_code.remove('MH1')
+    #
+    #         # Option code handling
+    #         if option_code:
+    #             temp = ['K2', 'K3', 'K6']
+    #             for i in option_code:
+    #                 if i in temp:
+    #                     cpa = cpa + '/K3'
+    #                 if i == 'A1' or i == 'A2':
+    #                     cpa = cpa + "/" + i
+    #
+    #
+    #     else:
+    #         cpa = cpa + model_name[1] + model_name[2]
+    #         temp = ['0', '1', '2']
+    #         if model_name[3] in temp:
+    #             cpa = cpa + '0'
+    #         else:
+    #             cpa = cpa + '5'  # belongs to 3,4,5
+    #         cpa = cpa + model_name[4] + '-' + model_name[5] + 'NNNN'
+    #
+    #         if option_code:
+    #             # Check for the special case where the 3rd character is 'S' and 2nd character is 'F' or 'L'
+    #             if model_name[2] == 'S' and model_name[1] in ['F', 'L']:
+    #                 if 'MH1' in option_code:
+    #                     option_code = [opt if opt != 'MH1' else 'MG1' for opt in option_code]
+    #
+    #             if 'HD' in option_code:
+    #                 cpa = "CPA" + model_code[3:6] + "Y-N" + code[9:15] + "NNNN" + "/HD"
+    #                 option_code.remove('HD')
+    #             for i in option_code:
+    #                 if i in app_option:
+    #                     cpa = cpa + "/" + i
+    #
+    #     return cpa
+
     def cpa_code(st_code, option_code, model_name, app_option, cpa):
         if model_name[1] + model_name[2] in st_code:
-            # If 'ML' should be treated as 'MS'
+            # Handle specific cases for 'ML', 'HL', 'VL', etc.
             if model_name[1] == 'M' and model_name[2] == 'L':
                 cpa = cpa + 'MS' + "NN-NNNNN"
-
-            # If 'HL' should be treated as 'HS'
             elif model_name[1] == 'H' and model_name[2] == 'L':
                 cpa = cpa + 'HS' + "NN-NNNNN"
-
-            # If 'VL' should be treated as 'VS'
             elif model_name[1] == 'V' and model_name[2] == 'L':
                 cpa = cpa + 'VS' + "NN-NNNNN"
-
-            # If 'AL' should be treated as 'AS'
             elif model_name[1] == 'A' and model_name[2] == 'L':
                 cpa = cpa + 'AS' + "NN-NNNNN"
-
-            # If 'BL' should be treated as 'BS'
             elif model_name[1] == 'B' and model_name[2] == 'L':
                 cpa = cpa + 'BS' + "NN-NNNNN"
-
             elif model_name[2] == 'L':
                 cpa = cpa + model_name[1] + 'S' + "NN-NNNNN"
-
             else:
                 cpa = cpa + model_name[1] + model_name[2] + "NN-NNNNN"
 
-            # If third character is 'S', remove 'K1' and 'K5' from option_code
-            if model_name[2] == 'S':
-                option_code = [opt for opt in option_code if opt not in ['K1', 'K5']]
+            # Eliminate K1 and K5 - Remove all K-related codes if found
+            if 'K1' in option_code or 'K5' in option_code:
+                option_code = [opt for opt in option_code if not opt.startswith('K')]
 
-            # Check if both 'MG1' and 'MH1' are present, only consider 'MG1'
+            # Check for 'MG1' and 'MH1' condition
             if 'MG1' in option_code and 'MH1' in option_code:
                 option_code.remove('MH1')
 
@@ -69,12 +129,12 @@ def main_bom_explosion(code, qty, week=None):
                 temp = ['K2', 'K3', 'K6']
                 for i in option_code:
                     if i in temp:
-                        cpa = cpa + '/K3'
+                        cpa = cpa + '/K3'  # If any of K2, K3, K6 exists, add '/K3'
                     if i == 'A1' or i == 'A2':
                         cpa = cpa + "/" + i
 
-
         else:
+            # Logic when model_name doesn't match st_code patterns
             cpa = cpa + model_name[1] + model_name[2]
             temp = ['0', '1', '2']
             if model_name[3] in temp:
@@ -83,8 +143,8 @@ def main_bom_explosion(code, qty, week=None):
                 cpa = cpa + '5'  # belongs to 3,4,5
             cpa = cpa + model_name[4] + '-' + model_name[5] + 'NNNN'
 
+            # Further option code handling outside specific model patterns
             if option_code:
-                # Check for the special case where the 3rd character is 'S' and 2nd character is 'F' or 'L'
                 if model_name[2] == 'S' and model_name[1] in ['F', 'L']:
                     if 'MH1' in option_code:
                         option_code = [opt if opt != 'MH1' else 'MG1' for opt in option_code]
@@ -92,6 +152,7 @@ def main_bom_explosion(code, qty, week=None):
                 if 'HD' in option_code:
                     cpa = "CPA" + model_code[3:6] + "Y-N" + code[9:15] + "NNNN" + "/HD"
                     option_code.remove('HD')
+
                 for i in option_code:
                     if i in app_option:
                         cpa = cpa + "/" + i
@@ -120,8 +181,7 @@ def main_bom_explosion(code, qty, week=None):
     if model_code == 'EJA530E':
         column_names = ['OUTPUT', 'SPAN', 'MATERIAL', 'P-CONNECT', 'HOUSING', 'E-CONNECT', 'INDICATOR', 'BRACKET']
     else:
-        column_names = ['OUTPUT', 'SPAN', 'MATERIAL', 'P-CONNECT', 'BOLT-NUT', 'INSTALL', 'HOUSING', 'E-CONNECT',
-                        'INDICATOR', 'BRACKET']
+        column_names = ['OUTPUT', 'SPAN', 'MATERIAL', 'P-CONNECT', 'BOLT-NUT', 'INSTALL', 'HOUSING', 'E-CONNECT','INDICATOR', 'BRACKET']
 
     # Iterating through the list of columns
     for i in range(len(column_names)):

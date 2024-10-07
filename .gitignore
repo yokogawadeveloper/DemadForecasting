@@ -4,3 +4,5 @@ gunicorn.pid
 requirements.txt
 datas/migrations
 users/migrations
+.idea/*
+.idea
